@@ -1,0 +1,348 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header {
+  min-height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("/img/header-banner.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+nav {
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.nav-reservation a:link,
+.nav-reservation a:visited {
+  font-size: 18px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  border: 1px solid white;
+  padding: 7px 10px;
+  transition: all 0.5s;
+}
+
+.nav-reservation a:hover,
+.nav-reservation a:active {
+  background-color: white;
+  color: goldenrod;
+  border-radius: 20px;
+  transition: all 0.5s;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  line-height: 90px;
+}
+
+nav ul li a:link,
+nav ul li a:visited {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  margin-right: 30px;
+  margin-left: 30px;
+  border-bottom: 1px solid transparent;
+  transition: all 0.5s;
+}
+
+nav ul li a:hover,
+nav ul li a:active {
+  border-bottom: 1px solid goldenrod;
+  color: goldenrod;
+}
+
+.nav-icons {
+  display: flex;
+  flex-direction: row;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+}
+
+header h1 {
+  font-size: 70px;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+
+.social-icons a {
+  font-size: 60px;
+  color: white;
+  text-decoration: none;
+  margin-left: 2%;
+}
+
+.social-icons .facebook:hover {
+  color: rgb(56, 56, 199);
+}
+
+.social-icons .instagram:hover {
+  color: rgb(255, 0, 47);
+}
+
+.about-me {
+  min-height: 70vh;
+}
+
+.about-me img {
+  width: 500px;
+  height: 350px;
+  border: 20px solid white;
+  position: absolute;
+  margin-left: 7%;
+  bottom: -200px;
+}
+
+.heading-main {
+  font-size: 60px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  margin-top: 85px;
+  margin-left: 25%;
+}
+
+.heading-paragraph {
+  font-size: 30px;
+  letter-spacing: 1px;
+  text-align: justify;
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 10%;
+}
+
+.services {
+  background-color: black;
+  min-height: 120vh;
+}
+
+.heading-services h2 {
+  font-size: 80px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+  text-align: center;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  margin-right: 34%;
+}
+
+.services-table img {
+  width: 500px;
+  height: 750px;
+  border: 20px solid white;
+}
+
+.services-table {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 80vh;
+}
+
+.one-service {
+  background-color: white;
+  border-radius: 20px;
+  padding: 25px 25px;
+  width: 60%;
+}
+
+.one-service h2 {
+  font-size: 60px;
+  text-align: center;
+  padding-bottom: 5%;
+}
+
+.one-service p {
+  font-size: 30px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.506);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.one-service .warning {
+  border-bottom: none;
+  padding-top: 5%;
+}
+
+.gallery {
+  min-height: 100vh;
+}
+
+.reserve-btn a:link,
+.reserve-btn a:visited {
+  font-size: 40px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  border: 20px solid white;
+  background-color: black;
+  padding: 20px 25px;
+  position: absolute;
+  bottom: -205%;
+  margin-left: 23.5%;
+  transition: all 0.5s;
+}
+
+.reserve-btn a:hover,
+.reserve-btn a:active {
+  color: goldenrod;
+}
+
+.photos img {
+  width: 500px;
+  height: 550px;
+}
+
+.photos {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  row-gap: 60px;
+  -moz-column-gap: 60px;
+       column-gap: 60px;
+  height: 100vh;
+}
+
+.one-photo {
+  background-color: #000;
+  overflow: hidden;
+  height: 550px;
+}
+
+.one-photo img {
+  opacity: 0.5;
+  transform: scale(1.15);
+  transition: all 0.5s;
+}
+
+.one-photo img:hover {
+  transform: scale(1);
+  opacity: 1;
+}
+
+.kontakt {
+  min-height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("/img/kontakt.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.kontakt h2 {
+  text-align: center;
+  color: white;
+  font-size: 60px;
+  font-weight: bold;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding-top: 3%;
+}
+
+.kontakt-map {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 80vh;
+}
+
+.kontakt-info h3 {
+  font-size: 60px;
+  color: white;
+}
+
+.kontakt-info a {
+  font-size: 30px;
+  text-decoration: none;
+  color: white;
+}
+
+footer {
+  font-size: 20px;
+  text-align: center;
+  height: 3vh;
+  line-height: 50px;
+  -webkit-clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
+          clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
+}
+
+@media screen and (min-width: 1023px) {
+  .tablet-text {
+    display: none;
+  }
+}
+@media screen and (min-width: 767px) and (max-width: 1023px) {
+  nav ul {
+    display: none;
+  }
+  .nav-reservation {
+    display: none;
+  }
+  .tablet-text {
+    font-size: 20px;
+    color: white;
+    line-height: 70px;
+  }
+  .about-me img {
+    display: none;
+  }
+  .about-me p {
+    padding-bottom: 10%;
+  }
+  .services {
+    min-height: 100vh;
+  }
+  .services img {
+    display: none;
+  }
+  .one-service {
+    margin: 0 auto;
+    margin-bottom: 20%;
+  }
+  .one-service p {
+    font-size: 20px;
+  }
+  .services h2 {
+    padding-bottom: 20%;
+  }
+  .reserve-btn {
+    display: none;
+  }
+  .kontakt {
+    margin-top: 280%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .kontakt {
+    margin-top: 300%;
+  }
+}/*# sourceMappingURL=style.css.map */
